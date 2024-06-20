@@ -1,7 +1,11 @@
 
 
 export default function Tickets() {
+    console.log("tickets")
   return (
-    <div>Tickets</div>
+      <div>tickets
+      
+      
+      </div>
   )
 }
