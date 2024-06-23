@@ -4,7 +4,7 @@ export default function Home() {
 
 
     <main>
-      <h1 className="text-3xl font-bold underline">Dashboard</h1>
+      <h3 className="text-3xl font-bold italic text-green-900 justify-center">This is where Shrek resides buy the tickets for him NOW</h3>
     </main>
 
 
