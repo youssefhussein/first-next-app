@@ -14,3 +14,8 @@
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 - [Css Modules/Global styles tutorial](https://nextjs.org/docs/app/building-your-application/styling/css-modules)
+
+# Details
+
+- server on port 3000
+- db port on 4321
