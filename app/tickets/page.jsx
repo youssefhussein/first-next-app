@@ -1,10 +1,14 @@
+import TicketList from "./TicketList";
 export default function Tickets() {
-	//prettier-ignore
-	console.log("tickets");
-	//urmom
+	
+	
 	return (
-		<div>
-			<h2>Tickets</h2>
-		</div>
-	);
+    <div>
+      <div className="text-center text-green-400">
+        <h1 className="text-3xl font-bold">Tickets</h1>
+        <div>Current list of tickets</div>
+      </div>
+      <TicketList />
+    </div>
+  );
 }

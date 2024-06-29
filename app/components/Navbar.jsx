@@ -10,7 +10,7 @@ export default function Navbar() {
 				alt="shrek"
 				width={50}
 				placeholder="blur"
-				className="inline rounded-3xl bg-gradient-to-r from-cyan-500 to-blue-500 mix-blend-multiply hover:text-black"
+				className="inline rounded-3xl  hover:text-black"
 				quality={100}
 			></Image>
 			<h1>Shrek Mania</h1> <Link href="/">Home</Link>{" "}

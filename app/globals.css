@@ -3,3 +3,20 @@
 @tailwind utilities;
 @tailwind variants;
 
+
+/* pill styles */
+.pill {
+  @apply 
+    py-1 px-2 mt-3
+    inline-block 
+    text-xs font-semibold;
+}
+.pill.high {
+  @apply bg-red-300 text-red-600 rounded-xl;
+}
+.pill.medium {
+  @apply bg-blue-300 text-blue-600 rounded-xl;
+}
+.pill.low {
+  @apply bg-emerald-300 text-emerald-600 rounded-xl;
+}
