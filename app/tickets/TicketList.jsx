@@ -1,10 +1,10 @@
-"use server";
 
 import Link from "next/link";
 
 async function getTickets() {
+
   const res = await fetch("http://localhost:4321/tickets" , {
-    next: { revalidate: 30 },
+    next: { revalidate: 0 },
   });
 
   return res.json();
@@ -27,12 +27,12 @@ export default async function TicketList() {
               {ticket.priority} priority
             </span>
           </div>
+        </Link>
           <p className="pt-2 text-sm">
             <span className="text-green-600">
-              <a href={`mailto:${ticket.user_email}`}>{ticket.user_email}</a>
+              <Link href={`mailto:${ticket.user_email}`}>{ticket.user_email}</Link>
             </span>
           </p>
-        </Link>
         </div>
       ))}
       {tickets.length === 0 && <p className="text-center">No tickets right now</p>}

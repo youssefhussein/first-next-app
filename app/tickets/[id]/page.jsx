@@ -1,8 +1,21 @@
+
+import { notFound } from "next/navigation";
+
+export async function generateStaticParams() {
+  const res = await fetch("http://localhost:4321/tickets")
+  const tickets = await res.json()
+  return tickets.map(ticket => ({id: ticket.id}))
+}
+
+
 async function getTicket(id) {
+
   const res = await fetch("http://localhost:4321/tickets/" + id, {
     next: { revalidate: 30 },
   });
-
+if(!res.ok) {
+ notFound()
+}
   return res.json();
 }
 
@@ -11,7 +24,9 @@ export default async function TicketDetails({ params }) {
   return (
     <main>
       <nav>
-        <h2>Ticket Details</h2>
+        <h2 className="pt-3 text-center text-2xl font-bold text-green-900">
+          Ticket Details
+        </h2>
       </nav>
       <div className="relative my-4 overflow-hidden rounded-md bg-green-100 px-4 py-3 shadow-sm">
         <h3 className="mb-0 text-sm font-bold text-gray-700">{ticket.title}</h3>
