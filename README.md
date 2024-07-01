@@ -5,8 +5,14 @@
 3. tailwind is awesome
 4. use className not class
 5. next.js is a meta framework
-6. building for production is slow
-7.
+6. building for production is slow but makes the app faster at the end
+7. loading page
+9. useState & useRouter
+10. client components
+11. forms
+12. custom 404 page
+13. Suspense
+14. learned how to control wethere the rendering is static or dynamic
 
 # Next.js stuff
 
